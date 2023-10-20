@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>user</title>
+</head>
+<style>
+           *,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body{
+  background-image: url("../images/Pasted\ image\ 7.png");
+  background-size: cover;
+    background-position: center center;
+    object-fit: cover;
+    background-attachment: fixed;
+}
+.peter{
+    background-color: rgba(73, 73, 73, 0.89);   
+}
+.in{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    gap: 3rem;   
+}
+li{
+  padding: 1.5rem;
+}
+.nav-link{
+  text-decoration: none;
+  color: whitesmoke;
+  font-size: 2rem;
+}
+.home{
+  border: solid;
+  width: 30%;
+  padding: 1.4rem;
+  margin-top: 3rem;
+  margin-left: 35%;
+}
+h1{
+  padding: 2rem;
+  text-align: center;
+}
+p{
+  padding: 2rem;
+}
+input{
+  width: 100%;
+  margin-bottom: 1.5rem;
+  padding: 0.3rem;
+}
+button{
+  padding: 0.5rem 3rem;
+}
+button a{
+  text-decoration: none;
+  color: black;
+}
+.home label{
+    font-size: 1.7rem;
+    text-align: left;
+}
+@media(max-width:488px){
+  button{
+  padding: 0.1rem 0.5rem;
+}
+.home label{
+    font-size: 1rem;
+    font-weight: bold;
+}
+h1{
+  padding: 0.5rem;
+}
+.in{
+    gap: 1rem;   
+}
+}
+@media(max-width:257px){
+  .home{
+    margin-left: 20%;
+  }
+}
+
+</style>
+<body>
+    <nav class="peter">
+        <ul class="in">
+          <li ><a href="./index.html" class="nav-link">Home</a></li>
+          <li><a href="./login.html" class="nav-link">Login</a></li>
+          <li><a href="" class="nav-link">Blogs</a></li>
+        </ul>
+      </nav>
+      <div class="home">
+        <form action="">
+          <h1>Sign-up</h1>
+          <div>
+            <label for="username">Username</label>
+            <input type="username" id="username" name="username" />
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" />
+          </div>
+          <div>
+              <label for="password">Password</label>
+              <input type="password" id="password" name="password">
+          </div>
+          <div>
+            <label for="password">Confrimpassword</label>
+            <input type="password" id="password" name="password" />
+          </div>
+          <center>
+            <div >
+              <button ><a href="./index.html">Not now</a></button>
+            <button type="submit" class="btn">Ok</button>
+          </div>
+        </center>
+        </form>
+      </div>
+      <script src="../Js/Signup.js"></script>
+</body>
+</html>

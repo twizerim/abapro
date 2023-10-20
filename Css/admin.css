@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Satisfy&display=swap');
+*,
+*::after,
+*::before{
+    padding: 0%;
+    margin: 0%;;
+    font-family: 'Dancing Script', cursive;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    color: black;
+    font-weight: bolder;
+}
+nav{
+    background-color: blue;
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+}
+li{
+    list-style: none;
+    padding: 2rem;
+}
+li a{
+    text-decoration: none;
+    color:aliceblue;
+    font-weight: bold;
+}
+.nav-link{
+    margin: 2rem;
+    background-color: rgba(15, 73, 73, 0.24);
+    width: 25%;
+    height: 80vh;
+    border-radius: 1.5rem;
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 255, 0.603);
+}
+.logo img{
+    width: 30%;
+    height: 10vh;
+    border-radius: 2rem;
+}
+.nav{
+    display: flex;
+}
+#nav-link{
+    margin-top: 2rem;
+    width: 100%;
+    padding: 2rem;
+}
+#nav{
+    width: 98%;
+    background-color: rgba(15, 73, 73, 0.24);
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 255, 0.603);
+}
+.text{
+    display: flex;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+.e1{
+    width: 30%;
+    height:auto;
+    background-color: rgba(15, 73, 73, 0.24);
+    border-radius: 1rem;
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 255, 0.603);
+}
+.word{
+    display: flex;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+#e1{
+    width: 35%;
+    height:auto;
+    background-color: rgba(15, 73, 73, 0.24);
+    border-radius: 1rem;
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 255, 0.603);
+}
+.out{
+    display: flex;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+.ok{
+    width: 70%;
+    height:auto;
+    background-color: rgba(15, 73, 73, 0.24);
+    border-radius: 1rem;
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 255, 0.603);
+}
+.oke{width: 30%;
+    height:auto;
+    background-color: rgba(15, 73, 73, 0.24);
+    border-radius: 1rem;
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 255, 0.603);
+}

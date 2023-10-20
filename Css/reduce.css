@@ -1,0 +1,206 @@
+*,
+*::after,
+*::before{
+    padding: 0%;
+    margin: 0%;;
+    font-family: pappin,sans-serif;
+    box-sizing: border-box;
+}
+@media(max-width:1160px){
+    .logo{
+        font-size: 2rem;
+        padding: 2rem;
+    }
+    .links{
+        gap: 1.5rem;
+    }
+}
+@media(max-width:975px){
+    .ours{
+        display: grid;
+        grid-template-columns: repeat(4, 2fr);
+        gap: 2rem;
+        justify-content: center;
+    }
+    .logo{
+        font-size: 1.8rem;
+    }
+    .links{
+        padding: 1rem;
+    }
+    .nav-link{
+        font-size: 1.4rem;
+        font-weight: 600;
+    }
+    .link{
+        border-radius: 1rem;
+        padding: 0.6rem;
+        font-size: 1.4rem;
+    }
+}
+@media(max-width:802px){
+    nav{
+        padding: 2rem 0;
+     }
+    .nav-link{
+        font-size: 1rem;
+        font-weight: 700;
+    }
+    .link{
+        border-radius: 1rem;
+        padding: 0.4rem;
+        font-size: 1rem;
+    }
+    .ok{
+        font-size: 1.2rem;
+    }
+    .logo{
+        font-size: 1.5rem;
+        padding: 1rem;
+    }
+    h2{
+        font-size: 2rem;
+    }
+    li{
+        font-size: 1.5rem;
+    }
+    .card h6{
+        font-size: 2rem;  
+    }
+     
+}
+@media(max-width:693px){
+    .diff-card{
+        display: grid;
+        grid-template-columns: repeat(1, 2fr);
+    }
+    .card{
+        width: 60%;
+    }
+    .ours{
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+        gap: 2rem;
+        justify-content: center;
+    }
+      .fill{
+        display: grid;
+        grid-template-columns: repeat(1, 2fr);
+        gap: 2rem;
+    }
+    .form{
+        width: 100%;  
+    }
+    #button{
+        width: 100%;
+    }
+}
+@media(max-width:627px){    
+    .link{
+        border-radius: 1rem;
+ 
+        font-size: 0.5rem;
+    }
+    .logo{
+        font-size: 0.9rem;
+        padding: 0.4rem;
+    }
+    .welcome{
+        padding: 0.3rem;
+        font-size: 1.6rem;
+    }
+    .home{
+      height:auto;
+      align-items:normal;
+
+    }
+    .words{
+        padding: 2rem;
+        font-size: 1.3rem;
+    }
+    .Home-container{
+        padding-top: 4rem;
+        padding-left: 2rem;
+    }
+    .ok{
+        font-size: 1rem;
+    }
+    .ab h2{
+        padding: 1rem;
+        font-size: 1.6rem;
+    }
+    .join{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .conte{
+        width: 100%;
+    }
+    .customer-care{
+        width: 100%;
+    }
+    .card{
+        width: 100%;
+    }
+} 
+@media(max-width:520px){
+     .links{
+        gap: 1rem;
+     }
+     .ours{
+        display: grid;
+        grid-template-columns: repeat(1, 2fr);
+        gap: 2rem;
+        justify-content: center;
+    }
+}
+@media(max-width:492px){
+    #about{
+        display: grid;
+        gap: 2rem;
+        grid-template-columns: repeat(1, 2fr);
+    }
+    .about{
+        width: 100%;
+     } 
+     .nav-link{
+        display: none;
+    }
+    .link{
+        display: none;
+    }
+    .home{
+        width: 80%;
+    }
+}
+@media(max-width:379px){
+   
+ 
+    .logo{
+       display: none;
+    }
+    .bars{
+        display: block;
+    }
+    .line{
+        border-radius: 1rem;
+        padding: 0.3rem;
+        margin-bottom: 1rem;  
+    }
+    .welcome{
+        padding: 0rem;
+        font-size: 1rem;
+    }
+
+}
+@media(max-width:298px){
+    .line{
+        border-radius: 0.5rem;
+        padding: 0.1rem;
+        margin-bottom: 0.6rem;
+    }
+    .welcome{
+        padding: 0rem;
+        font-size: 0.6rem;
+    }
+}

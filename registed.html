@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <!-- ---------------------tangira css----------------------------- -->
+  <style>
+        *,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  color: #eee;
+  width: 100%;
+}
+    .peter{
+    background-color: rgba(12, 64, 75, 0.568);
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+
+  }
+  .in{
+    display: flex;
+    gap: 3rem;
+    font-size: 3rem;
+  }
+  .in li{
+    list-style: none;
+  }
+  .nav-link{
+    font-size: 2.5rem;
+    text-decoration: none;
+  }
+  .home{
+    background-color:  rgba(45, 110, 119, 0.836);
+    justify-content: center;
+    object-fit: cover;
+    background-repeat:no-repeat;
+    height: 100vh;
+    padding-top: 2rem;
+
+  }
+  h1{
+    font-size: 3rem;
+    text-align: center;
+    padding-bottom: 3rem;
+  }
+  .home label{
+    font-size: 1.7rem;
+    color: whitesmoke;
+    font-weight: bold;
+  }
+  .home input{
+    width: 100%;
+    border-radius: 1rem;
+    padding: 0.5rem;
+  }
+  form{
+    width: 30%;
+    border-radius: 1.4rem;
+    padding: 3rem;
+    box-shadow: 3px 3px 3px 3px blue;
+  }
+  p{
+    font-size: 2.5rem;
+  }
+  button{
+    font-size: 1rem;
+    margin-top: 2rem;
+    padding: 1rem 5rem;
+    border-radius: 1.5rem;
+  }
+  a{
+    color: blue;
+    text-decoration: none;
+  }
+  .sinup a{
+    padding: 1rem 20rem;
+  }
+  /* ---------------------------tangira responsive---------------------------------- */
+  @media(max-width:600px){
+    button{
+    padding: 1rem 2rem;
+  }
+  h1{
+    font-size: 2.5rem;
+    padding-bottom: 2rem;
+  }
+  } 
+  @media(max-width:523px){
+    button{
+    padding: 0.3rem 0.8rem;
+  }
+  h1{
+    font-size: 2rem;
+    padding-bottom: 1.5rem;
+  }
+  p{
+    font-size: 1.5rem;
+  }
+  .home label{
+    font-size: 0.9rem;
+  }
+  .home input{
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
+  form{
+    padding: 1rem;
+  }
+  .in{
+    gap: 1.2rem;
+  }
+}
+@media(max-width:284px){
+  form{
+    padding: 0.3rem;
+  }
+  h1{
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+  }
+}  
+  </style>
+  <!-- --------------------------------tangira html -->
+  <body>
+    <nav class="peter">
+      <ul class="in">
+        <li ><a href="./index.html" class="nav-link">Home</a></li>
+        <li><a href="./enter.html" class="nav-link">Login</a></li>
+        <li><a href="" class="nav-link">Blogs</a></li>
+      </ul>
+    </nav>
+    <div class="home">
+      <center>
+      <form action="">
+        <h1>Registration</h1>
+        <div>
+          <label for="username">UserNames</label>
+          <input type="username" id="username" name="username" />
+        </div>
+        <div>
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" />
+        </div>
+        <div>
+            <label for="nation">NationalId</label>
+            <input type="number" id="nation" name="nation">
+        </div>
+        <div>
+          <label for="nationaliy">Nationality</label>
+          <input type="text" id="nationality" name="nationality" />
+        </div>
+        <div>
+          <label for="location">Location</label>
+          <input type="text" id="location" name="location" />
+        </div>
+        <div>
+          <label for="skills">YourSkills</label>
+          <input type="text" id="skills" name="skills" />
+        </div>
+        <div>
+          <label for="password">YourPassword</label>
+          <input type="password" id="password" name="password" />
+        </div>
+        <center>
+          <div >
+          <button type="submit" class="btn">Sign-Up</button>
+        </div>
+      </center>
+      </form>
+      </center>
+    </div>
+  </body>
+</html>
