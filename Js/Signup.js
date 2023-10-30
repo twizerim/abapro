@@ -1,31 +1,33 @@
 
-
-
-let username=document.getElementById("username")
-let email=document.getElementById("email")
-let password=document.getElementById("password")
-let Confrimpassword=document.getElementById("password")
-let form=document.querySelector("form")
-
-let users=JSON.parse(localStorage.getItem("users")) || []
-
+const form = document.querySelector(".form-signup")
 
 form.addEventListener("submit",(e)=>{
     e.preventDefault()
+    
+    const firstname = document.querySelector("#firstname").value
+    const lastname = document.querySelector("#lastname").value
+    const email = document.querySelector("#email").value
+    const password = document.querySelector("#password").value
+    const confirmpassword = document.querySelector("#confrimpassword").value
 
-    let user={
-        names:username.value,
-        email:email.value,
-        password:password.value,
-        confrimpassword:Confrimpassword.value,
-       
+    const data={
+        firstname,lastname,email,password,confirmpassword
     }
-    if(users.find((titi)=>titi.email==email.value)){
-        alert("user already exist")
-    }else{
-    users.unshift(user)
-    const tipe=JSON.stringify(users)
-    localStorage.setItem("users",tipe)
-    alert("user successfuly created")
-    } 
+    const postman={
+        method:"Post",
+        headers:{
+            "Content-Type":"application/json"
+        },
+        body:JSON.stringify(data)
+    }
+    fetch(`https://rich-tan-dhole-cap.cyclic.app/rice/user`,postman)
+    .then((resp)=>{
+        return resp.json()
+    })
+    .then((data)=>{
+        alert(data.message)
+    })
+    .catch((err)=>{
+        alert(err)
+    })
 })

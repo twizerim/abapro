@@ -285,7 +285,13 @@ p{
     margin-bottom: 1rem;
     width: 100%;
 }
-#t{
+#p{
+    border-radius: 1rem;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    width: 100%; 
+}
+ #t{
     border-radius: 1rem;
     padding: 0.5rem;
     margin-bottom: 1rem;

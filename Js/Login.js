@@ -1,20 +1,44 @@
-let username=document.getElementById("username")
-let email=document.getElementById("email")
-let password=document.getElementById("password")
-let form=document.querySelector("form")
 
-let users=JSON.parse(localStorage.getItem("users")) || []
+const form = document.querySelector(".form-login")
 
 form.addEventListener("submit",(e)=>{
     e.preventDefault()
+    
+    const email = document.querySelector("#email").value
+    const password = document.querySelector("#password").value
 
-    const userExist=users.find((user)=>user.email==email.value)
-    if(userExist && userExist.password==password.value){
-        window.location.href=".admin.html"
-        alert("ok")
-    }else if(userExist && userExist.password!=password.value){
-        alert("invald password")
-    }else{
-        alert("user doesn't exists!")
+    const data={
+        email,password
     }
+
+    const postman={
+        method:"POST",
+        headers:{
+            "Content-Type":"application/json"
+        },
+        body:JSON.stringify(data)
+    }
+
+    fetch(`https://rich-tan-dhole-cap.cyclic.app/rice/user/login`,postman)
+    .then((resp)=>{
+        return resp.json()
+    })
+    .then((data)=>{
+        if(data.token){
+            const token=data.token
+            localStorage.getItem("token",token)
+            if(data.data.user.role=="admin"){
+            window.location.href="./admin.html"
+        }else{
+            window.location.href="./user.html"
+        }
+    }else{
+        alert(data.message)
+    }
+    })
+    .catch((err)=>{
+        alert(err)
+    })
+
+
 })

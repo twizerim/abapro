@@ -145,7 +145,7 @@
             <div class="card">
             <h1 class="title">Fill there all informations</h1>
             <div class="hello">
-                <form action="">
+                <form action="" class="message-sent">
                     <div class="label-name">
                         <label for="name">Names</label>
                         <input type="name" id="s" name="name" placeholder="fill name" required>
@@ -156,7 +156,7 @@
                     </div>
                     <div class="label-age">
                         <label for="age">Age</label>
-                        <input type="number" id="t" name="age" placeholder="fill age" required>
+                        <input type="number" id="p" name="age" placeholder="fill age" required>
                     </div>
                     <div class="mag">
                         <label for="message" class="message">message</label>
@@ -164,10 +164,10 @@
                     </div>
                     <div class="herezo">
                         <div>
-                            <button onclick="Send()" id="see">Send</button>
+                            <button type="submit" id="see">Send</button>
                         </div>
-                        <div>
-                            <h4 class="delived"></h4>
+                        <div class="delivd">
+                            <!-- <h4 class="delived"></h4> -->
                         </div>
                 </form>
             </div>
@@ -319,5 +319,6 @@
             </div>
            </div>
            <script src="./Js/production.js"></script>
+           <script src="./Js/sendmessage.js"></script>
         </body>
         </html>
