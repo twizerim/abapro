@@ -17,19 +17,7 @@ function submit(){
          document.querySelector(".fedback").style.color="red"
         }
 }
-function Send(){
-    let Names=document.getElementById("s").value
-     let Age=parseInt(document.getElementById("t").value)
-    let message=document.querySelector("#of").value
-    const form=document.querySelector("form").value
-    if (Age>=21){
-        let Fedback=("Message sent")
-        document.querySelector(".delived").innerHTML=Fedback
-        document.querySelector(".delived").style.color="green"
-    }
-    else{
-         let Fedback=("Message not sent")
-         document.querySelector(".delived").innerHTML=Fedback
-         document.querySelector(".delived").style.color="red"
-        }  
+
+function show(){
+    const usersTable=document.querySelector(".get-users").style.display="block"
 }

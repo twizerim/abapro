@@ -9,12 +9,52 @@
 <body>
     <nav>
         <li><a href="./index.html">Home</a></li>
-        <li><a href=""></a>Users</li>
-        <li><a href=""></a>Production</li>
-        <li><a href=""></a>Members</li>
-        <li><a href=""></a>Message</li>
+        
+            <li class="hgh">Users
+             <ul id="down">
+                <li><a href="#" onclick="show()">Getall</a></li>
+                <li><a href="#">Getone</a></li>
+             </ul>
+            </li> 
+        </li>
+        <li class="hgh">Production
+            <ul id="down">
+                <li><a href="#">Post</a></li>
+                <li><a href="#">Getone</a></li>
+            </ul>
+        </li>
+        <li class="hgh">Message
+            <ul id="down">
+                <li><a href="#">Get all</a></li>
+            </ul>
+        </li>
     </nav>
+    <div class="myine">
+        <h1>THIS IS<a href="#" style="color:rgb(47, 179, 255)"> MY ADMIN DASHBOARD</a></h1>
+    </div>
+    <div class="spinner"></div>
+    <div class="get-users">
+        <h1>All users account signed up</h1>
+        <center>
+            <table class="table-users">
+                <tr>
+                    <th>NO</th>
+                    <th>FirstName</th>
+                    <th>LastName</th>
+                    <th>Email</th>
+                    <th>Password</th>
+                    <th>Role</th>
+                    <th>PostedAt</th>
+                    <th colspan="2">action</th>
+                </tr>
+                <tr></tr>
+            </table>
+        </center>
+    </div>
     
     <script src="./js/user.js"></script>
+    <script src="./Js/getAllusers.js"></script>
+    <script src="./Js/production.js"></script>
+    <script src="./Js/getoneuser.js"></script>
 </body>
 </html>

@@ -1,10 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Satisfy&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&display=swap');
 *,
 *::after,
 *::before{
     padding: 0%;
     margin: 0%;;
-    font-family: 'Dancing Script', cursive;
+    font-family: 'Merriweather', serif;
 }
 html{
     font-size: 62.5%;
@@ -13,3 +14,108 @@ body{
     color: black;
     font-weight: bolder;
 }
+nav{
+    background-color: rgb(245, 6, 6);
+    display:flex;
+    justify-content: space-around;
+    padding: 2rem;
+}
+li{
+    list-style: none;
+    color: rgb(55, 13, 94);
+    font-weight: bolder;
+    font-size: 2rem;
+}
+li a{
+    font-size: 2rem;
+    text-decoration: none;
+
+}
+.hgh{
+    position: relative;
+    
+}
+#down{
+position: absolute;
+font-size: 1.7rem;
+display: flex;
+flex-direction: column;
+background-color: rgb(245, 6, 6);
+visibility: hidden;
+
+
+}
+#down {
+    padding-top: 2rem;
+}
+#down li{
+    padding: 2rem 1rem;
+}
+
+li:hover ul#down{
+    visibility: visible;
+    
+    
+}
+#down li:hover{
+    background-color: rgba(128, 20, 20, 0.562);
+    border-radius: 5px;
+ 
+}
+@media(max-width:510px){
+    li a{
+        font-size: 1rem;
+    }
+    li{
+        font-size: 1rem;
+    }
+}
+.spinner{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: absolute;
+    border: 3px solid whitesmoke;
+    border-top:3px solid rgb(245, 6, 6);
+    top: 50%;
+    left: 50%;
+    animation: spin 1s linear infinite;
+    transform: translate(-50%, -50%);
+}
+@keyframes spin{
+    0%{
+        transform: translate(-50%, -50%)rotate(360deg);
+    }
+    100%{
+        transform: translate(-50%, -50%)rotate(360deg);
+    }
+}
+.myine{
+    text-align: center;
+    padding: 2rem;
+}
+.get-users{
+    background-color: blueviolet;
+    margin: 3rem ;
+    display: none;
+}
+.get-users h1{
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+table{
+    border-collapse: collapse;
+    width: 70%;
+}
+tr,td{
+    border: 2px solid rgb(61, 43, 226);
+    font-size: 1.4rem;
+    padding: 0.3rem;
+}
+th{
+    font-size: 1.8rem;
+    border: 2px solid rgb(61, 43, 226);
+    padding: 0.6rem;
+}
+

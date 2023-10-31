@@ -10,7 +10,7 @@ form.addEventListener("submit",(e)=>{
     const data={
         email,password
     }
-
+   
     const postman={
         method:"POST",
         headers:{
@@ -24,9 +24,10 @@ form.addEventListener("submit",(e)=>{
         return resp.json()
     })
     .then((data)=>{
+        
         if(data.token){
             const token=data.token
-            localStorage.getItem("token",token)
+            localStorage.setItem("token",token)
             if(data.data.user.role=="admin"){
             window.location.href="./admin.html"
         }else{
