@@ -96,7 +96,7 @@ li:hover ul#down{
 }
 .get-users{
     background-color: blueviolet;
-    margin: 3rem ;
+    margin: 1.5rem ;
     display: none;
 }
 .get-users h1{
@@ -106,7 +106,7 @@ li:hover ul#down{
 }
 table{
     border-collapse: collapse;
-    width: 70%;
+    width: 60%;
 }
 tr,td{
     border: 2px solid rgb(61, 43, 226);
@@ -118,4 +118,81 @@ th{
     border: 2px solid rgb(61, 43, 226);
     padding: 0.6rem;
 }
+.allmessage-sent{
+    background-color: rgb(185, 109, 119);
+    width: 30%;
+    padding: 1rem;
+    margin-left: 2rem;
+    border-radius: 1rem;
+    display: none;
+}
+.allmessage-sent h1{
+    text-align: center;
+    color: red;
+}
+.message-contain{
+    display: grid;
+    gap: 3rem;
+    grid-template-columns: repeat(1, 1fr);
+    
+}
+.allmessage-sent .mesage-sent{
+    background-color: aliceblue;
+    padding: 2rem;
+    margin: 2rem;
+    box-shadow:  2px 2px 2px red;
+     
+   
+}
+.allmessage-sent p{
+    padding-top: 1rem;
+    padding-bottom: 1.5rem;
+    font-size: 1.5rem;
+}
+.allmessage-sent h2{
+    font-size: 1.2rem;
+    color:rgb(47, 179, 255)
+}
+span a{
+    text-decoration: none;
+    font-size: 1.5rem;
 
+}
+.contain-postand-get{
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem;
+}
+.contain-postand-get h1{
+    text-align: center;
+}
+.post-product{
+    background-color: brown;
+    padding: 2rem;
+    display: none;
+}
+.post{
+    padding: 2rem;
+}
+.post .lebles{
+    margin-bottom: 1.4rem;
+}
+.lebles input{
+    width: 100%;
+    padding: 0.3rem;
+}
+.lebles label{
+    font-size: 1.5rem;
+}
+.to-all{
+    display: flex;
+    justify-content: center;
+}
+.to-all button{
+    width: 100%;
+    padding: 0.3rem;
+    margin-left: 1rem;
+}
+button:hover{
+    background-color:blueviolet
+}

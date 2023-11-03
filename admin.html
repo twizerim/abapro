@@ -8,7 +8,11 @@
 </head>
 <body>
     <nav>
-        <li><a href="./index.html">Home</a></li>
+        <li class="hgh">Message
+            <ul id="down">
+                <li><a href="#" onclick="mess()">Get all</a></li>
+            </ul>
+        </li>
         
             <li class="hgh">Users
              <ul id="down">
@@ -19,15 +23,12 @@
         </li>
         <li class="hgh">Production
             <ul id="down">
-                <li><a href="#">Post</a></li>
+                <li><a href="#" onclick="product()">Post</a></li>
                 <li><a href="#">Getone</a></li>
             </ul>
         </li>
-        <li class="hgh">Message
-            <ul id="down">
-                <li><a href="#">Get all</a></li>
-            </ul>
-        </li>
+       
+        <li><a href="./index.html">Home</a></li>
     </nav>
     <div class="myine">
         <h1>THIS IS<a href="#" style="color:rgb(47, 179, 255)"> MY ADMIN DASHBOARD</a></h1>
@@ -49,12 +50,52 @@
                 </tr>
                 <tr></tr>
             </table>
-        </center>
+        </center> 
+    </div>
+    <div class="contain-postand-get">
+        <div class="allmessage-sent">
+            <h1>Read all message sent</h1>
+            <div class="message-contain">
+                <div class="mesage-sent">
+                    <!-- <h2>date</h2>
+                    <p>email</p>
+                    <span>
+                        <a href="">Read...</a>
+                    </span> -->
+                </div>
+            </div>
+        </div>
+        <div class="post-product">
+            <h1>post product required to the market</h1>
+            <form action="" class="post">
+                <div class="lebles">
+                    <label for="name">ProductName</label>
+                    <input type="text" name="product" id="name">
+                </div>
+                <div class="lebles">
+                    <label for="image">ProductImage</label>
+                    <input type="text" name="image" id="image">
+                </div>
+                <div class="lebles">
+                    <label for="data">ProducedAt</label>
+                    <input type="text" name="producedat" id="proAt">
+                </div>
+                <div class="lebles">
+                    <label for="expire">ExpiresAt</label>
+                    <input type="text" name="ExpiresAt" id="expAt">
+                </div>
+                <div class="to-all">
+                    <button type="submit">post to all</button>
+                </div>
+            </form>
+        </div>
     </div>
     
     <script src="./js/user.js"></script>
     <script src="./Js/getAllusers.js"></script>
     <script src="./Js/production.js"></script>
     <script src="./Js/getoneuser.js"></script>
+    <script src="./Js/getallmessage.js"></script>
+    <script src="./Js/postproduct.js"></script>
 </body>
 </html>

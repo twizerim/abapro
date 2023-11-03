@@ -2,7 +2,9 @@
 const token=window.localStorage.getItem("token")
 const table =document.querySelector(".table-users")
 const spinner=document.querySelector(".spinner")
+const messageall=document.querySelector(".allmessage-sent")
 spinner.style.display="block"
+
 
 
 const postman={
@@ -19,6 +21,7 @@ fetch(`https://rich-tan-dhole-cap.cyclic.app/rice/user/get`,postman)
 .then((data)=>{
     data.datas.map((user,index)=>{
         spinner.style.display="none"
+        messageall.style.display="none"
         table.innerHTML+=`
         <tr>
         <td>${index +1}</td>
